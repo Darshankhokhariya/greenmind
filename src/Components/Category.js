@@ -17,7 +17,7 @@ function Category() {
             <div className='h-full lg:h-[700px] lg:relative w-full font-popins'>
                 <div className='bg-[#C1DCDC] lg:h-full m-auto w-full'>
                     <div class="left-0 right-0 lg:absolute flex flex-col md:flex-row justify-center md:gap-6 container mx-auto w-full">
-                        <div class="lg:relative py-4 md:py-0  w-full -top-[40px]  text-center">
+                        <div class="lg:relative py-4 md:py-0   w-full -top-[40px]  text-center">
                             <img className='m-auto' src={require('../Image/Frame 36.png')} />
                             <div className='text-lg font-bold mt-4 md:mt-2'>Natural Plants</div>
                         </div>

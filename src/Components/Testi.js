@@ -20,7 +20,7 @@ function Testi() {
                         <div class="flex w-full">
                             <div className='w-[20%]'>
                                 <img
-                                    class="  h-48 w-48 object-cover"
+                                    class="w-28 h-28  md:h-48 md:w-48 object-cover"
                                     src={require('../Image/Group 9.png')}
                                     alt=""
                                 />

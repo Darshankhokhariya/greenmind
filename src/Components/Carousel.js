@@ -5,13 +5,13 @@ function Carousel() {
     return (
         <>
 
-            <div className='bg-color1  container mx-auto rounded-3xl px-10    mt-8 overflow-hidden'>
+            <div className='bg-color1  container mx-auto rounded-3xl px-10   mt-8 overflow-hidden'>
                 <div className= 'w-full flex flex-col lg:flex-row items-center'>
                     <div className='w-full lg:w-[40%]'>
-                        <div className='text-[32px]  md:text-[64px] font-popins text-black py-4 lg:py-0 leading-none font-extrabold'>
+                        <div className='text-[32px]  md:text-[64px] font-popins text-black py-6 lg:py-0 leading-none font-extrabold'>
                             Buy your dream plants
                         </div>
-                        <div className='mt-8 flex items-center'>
+                        <div className='mt-2 md:mt-8 flex items-center'>
                             <div className='border-r border-black pr-6'>
                                 <h1 className='font-medium text-[32px]'>50+</h1>
                                 <span className='text-[18px] font-medium'>Plant Species</span>
