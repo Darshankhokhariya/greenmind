@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsCart, BsList, BsPerson, BsX } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -12,7 +13,7 @@ function Nav() {
     const menuItems = [
         {
             name: 'Home',
-            href: '#',
+            path:'/'
         },
         {
             name: 'About',
@@ -27,26 +28,28 @@ function Nav() {
     return (
         <>
             <div className="mx-auto flex container items-center justify-between px-4 py-6 font-popins sm:px-6 ">
+                <Link to='/'>
                 <div className="inline-flex items-center space-x-2">
                     <img src={require('../Image/GREENMIND.png')} />
                 </div>
+                </Link>
                 <div className="hidden grow items-start lg:flex">
                     <ul className="ml-12 inline-flex space-x-8">
                         {menuItems.map((item) => (
                             <li key={item.name}>
-                                <a
-                                    href={item.href}
+                                <Link
                                     className="text-l font-semibold text-gray-800 hover:text-gray-900"
+                                    to={item.path}
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div className="hidden lg:flex items-center gap-3">
                     <BsCart className='text-xl' />
-                    <BsPerson className='text-xl' />
+                    <Link to='/login'><BsPerson className='text-xl' /></Link>
 
                 </div>
                 <div className="lg:hidden flex gap-3">

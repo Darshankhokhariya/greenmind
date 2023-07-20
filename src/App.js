@@ -1,24 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import About from './Components/About';
-import Carousel from './Components/Carousel';
-import Category from './Components/Category';
-import Footer from './Components/Footer';
-import Hero from './Components/Hero';
-import Nav from './Components/Nav'
-import Testi from './Components/Testi';
+import Login from './Pages/Login';
+import Home from './Pages/Home';
+import Signin from './Pages/Signin';
+
 
 function App() {
   return (
-   <>
-   <Nav/>
-   <Carousel/>
-   <Hero/>
-   <About/>
-   <Category/>
-   <Testi/>
-   <Footer/>
-   
-   </>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signin' element={<Signin/>} />
+      </Routes>
+
+    </>
   );
 }
 
